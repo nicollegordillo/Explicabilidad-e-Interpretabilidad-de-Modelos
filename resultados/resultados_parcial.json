@@ -1,0 +1,848 @@
+{
+  "semilla": 42,
+  "versiones": {
+    "torch": "2.13.0+cpu",
+    "shap": "0.49.1"
+  },
+  "task1_1": {
+    "a": {
+      "fuente": "Filo gèn', CC BY-SA 4.0, vía Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Banana_on_whitebackground.jpg",
+      "top5": [
+        {
+          "rango": 1,
+          "indice": 954,
+          "clase": "banana",
+          "prob": 0.9968144297599792
+        },
+        {
+          "rango": 2,
+          "indice": 951,
+          "clase": "lemon",
+          "prob": 0.001926847966387868
+        },
+        {
+          "rango": 3,
+          "indice": 348,
+          "clase": "ram",
+          "prob": 0.000302922009723261
+        },
+        {
+          "rango": 4,
+          "indice": 114,
+          "clase": "slug",
+          "prob": 0.00016028524260036647
+        },
+        {
+          "rango": 5,
+          "indice": 725,
+          "clase": "pitcher",
+          "prob": 0.0001545006816741079
+        }
+      ]
+    },
+    "b": {
+      "fuente": "Peretz Partensky, CC BY-SA 2.0, vía Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Dog_and_cat_showing_fight_or_flight_responses.jpg",
+      "top5": [
+        {
+          "rango": 1,
+          "indice": 285,
+          "clase": "Egyptian cat",
+          "prob": 0.23287685215473175
+        },
+        {
+          "rango": 2,
+          "indice": 276,
+          "clase": "hyena",
+          "prob": 0.11079656332731247
+        },
+        {
+          "rango": 3,
+          "indice": 243,
+          "clase": "bull mastiff",
+          "prob": 0.09895217418670654
+        },
+        {
+          "rango": 4,
+          "indice": 159,
+          "clase": "Rhodesian ridgeback",
+          "prob": 0.07455460727214813
+        },
+        {
+          "rango": 5,
+          "indice": 246,
+          "clase": "Great Dane",
+          "prob": 0.06684108078479767
+        }
+      ]
+    },
+    "c": {
+      "fuente": "Timothy A. Gonsalves, CC BY-SA 4.0, vía Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Cow_Uthandi_Beach_Chennai_Aug21_D72_20734.jpg",
+      "top5": [
+        {
+          "rango": 1,
+          "indice": 345,
+          "clase": "ox",
+          "prob": 0.4210267663002014
+        },
+        {
+          "rango": 2,
+          "indice": 690,
+          "clase": "oxcart",
+          "prob": 0.3407517671585083
+        },
+        {
+          "rango": 3,
+          "indice": 273,
+          "clase": "dingo",
+          "prob": 0.03392690792679787
+        },
+        {
+          "rango": 4,
+          "indice": 208,
+          "clase": "Labrador retriever",
+          "prob": 0.013835374265909195
+        },
+        {
+          "rango": 5,
+          "indice": 978,
+          "clase": "seashore",
+          "prob": 0.01290111057460308
+        }
+      ]
+    },
+    "b_segunda_clase": {
+      "indice": 243,
+      "clase": "bull mastiff",
+      "prob": 0.09895217418670654,
+      "rango": 3
+    },
+    "bbox_c": {
+      "x0": 14,
+      "y0": 68,
+      "x1": 154,
+      "y1": 208,
+      "fraccion_area": 0.390625
+    }
+  },
+  "task1_3": [
+    {
+      "mapa": "a",
+      "clase": "banana",
+      "logit y^c": 18.670005798339844,
+      "(1/Z)ΣM + b_c": 18.670007705688477,
+      "|error| (b)": 1.9073486328125e-06,
+      "máx|Z·L - M| (c)": 7.62939453125e-06,
+      "máx|error| ReLU+minmax 7x7 (d)": 2.980232238769531e-07,
+      "máx|error| 224x224 (extra)": 5.364418029785156e-07
+    },
+    {
+      "mapa": "b",
+      "clase": "Egyptian cat",
+      "logit y^c": 10.07400131225586,
+      "(1/Z)ΣM + b_c": 10.07400131225586,
+      "|error| (b)": 0.0,
+      "máx|Z·L - M| (c)": 7.62939453125e-06,
+      "máx|error| ReLU+minmax 7x7 (d)": 1.7881393432617188e-07,
+      "máx|error| 224x224 (extra)": 3.5762786865234375e-07
+    },
+    {
+      "mapa": "b2",
+      "clase": "bull mastiff",
+      "logit y^c": 9.218128204345703,
+      "(1/Z)ΣM + b_c": 9.218128204345703,
+      "|error| (b)": 0.0,
+      "máx|Z·L - M| (c)": 4.76837158203125e-06,
+      "máx|error| ReLU+minmax 7x7 (d)": 1.7881393432617188e-07,
+      "máx|error| 224x224 (extra)": 2.384185791015625e-07
+    },
+    {
+      "mapa": "c",
+      "clase": "ox",
+      "logit y^c": 10.182795524597168,
+      "(1/Z)ΣM + b_c": 10.182795524597168,
+      "|error| (b)": 0.0,
+      "máx|Z·L - M| (c)": 1.1444091796875e-05,
+      "máx|error| ReLU+minmax 7x7 (d)": 2.980232238769531e-07,
+      "máx|error| 224x224 (extra)": 4.172325134277344e-07
+    }
+  ],
+  "task1_4a": {
+    "tabla": [
+      {
+        "canal k": 171,
+        "w_k^c": 0.33285534381866455,
+        "w_k^c/Z": 0.006792966276407242,
+        "alpha_k^c (float32)": 0.006792966742068529,
+        "error relativo float32": 6.855050773990072e-08,
+        "error relativo float64": 1.2768527214808858e-16
+      },
+      {
+        "canal k": 141,
+        "w_k^c": 0.3292149603366852,
+        "w_k^c/Z": 0.006718672811985016,
+        "alpha_k^c (float32)": 0.006718673277646303,
+        "error relativo float32": 6.930852273042311e-08,
+        "error relativo float64": 1.2909718658583032e-16
+      },
+      {
+        "canal k": 496,
+        "w_k^c": 0.302661269903183,
+        "w_k^c/Z": 0.006176760420203209,
+        "alpha_k^c (float32)": 0.006176759954541922,
+        "error relativo float32": 7.538924219638416e-08,
+        "error relativo float64": 0.0
+      },
+      {
+        "canal k": 41,
+        "w_k^c": 0.3016328811645508,
+        "w_k^c/Z": 0.006155773065984249,
+        "alpha_k^c (float32)": 0.006155773531645536,
+        "error relativo float32": 7.564627258287087e-08,
+        "error relativo float64": 0.0
+      },
+      {
+        "canal k": 226,
+        "w_k^c": 0.30075618624687195,
+        "w_k^c/Z": 0.006137881428003311,
+        "alpha_k^c (float32)": 0.0061378818936645985,
+        "error relativo float32": 7.586677793794098e-08,
+        "error relativo float64": 1.413128876642477e-16
+      }
+    ],
+    "max_rel_err_32": 2.3447357477834885e-07,
+    "max_rel_err_64": 2.5323315299659326e-16,
+    "eps32": 1.1920928955078125e-07,
+    "eps64": 2.220446049250313e-16,
+    "max_std_espacial_grad": 0.0
+  },
+  "task1_4b": {
+    "iou_224": 0.0,
+    "iou_7x7": 0.0,
+    "spearman_mapas_7x7": -0.0439356962344423,
+    "clase1": "Egyptian cat",
+    "clase2": "bull mastiff"
+  },
+  "task1_4c": {
+    "clase": "ox",
+    "masa_dentro": 0.7446601986885071,
+    "fraccion_area": 0.390625,
+    "p_original": 0.4210267663002014,
+    "p_solo_objeto": 0.2861390709877014,
+    "p_solo_fondo": 5.724486618419178e-05,
+    "top1_solo_objeto": "oxcart (0.411)",
+    "top1_solo_fondo": "seashore (0.326)"
+  },
+  "task2_1": {
+    "exactitud": 0.775,
+    "auc": 0.7649999999999999,
+    "n_train": 800,
+    "n_test": 200
+  },
+  "task2_2": {
+    "err_eficiencia_max": 9.721730620526614e-08,
+    "phi0": 1.4307421474966338,
+    "media_f_fondo": 1.4307421474966338,
+    "top5_shap": {
+      "checking_status": 0.7602871335873149,
+      "purpose": 0.5117311119938271,
+      "credit_amount": 0.4902134791654752,
+      "duration": 0.3917476342323034,
+      "savings_status": 0.296328170727694
+    },
+    "top5_perm": {
+      "checking_status": 0.11899999999999991,
+      "credit_amount": 0.0762499999999999,
+      "duration": 0.057904761904761806,
+      "credit_history": 0.03964285714285705,
+      "savings_status": 0.026154761904761792
+    },
+    "spearman_rankings": 0.6496240601503759,
+    "tabla_importancias": {
+      "checking_status": {
+        "I_j": 0.7602871335873149,
+        "rank_SHAP": 1,
+        "perm_AUC": 0.11899999999999991,
+        "perm_std": 0.03014718241742914,
+        "rank_perm": 1
+      },
+      "purpose": {
+        "I_j": 0.5117311119938271,
+        "rank_SHAP": 2,
+        "perm_AUC": 0.003749999999999909,
+        "perm_std": 0.01065755483479627,
+        "rank_perm": 12
+      },
+      "credit_amount": {
+        "I_j": 0.4902134791654752,
+        "rank_SHAP": 3,
+        "perm_AUC": 0.0762499999999999,
+        "perm_std": 0.013610871046982852,
+        "rank_perm": 2
+      },
+      "duration": {
+        "I_j": 0.3917476342323034,
+        "rank_SHAP": 4,
+        "perm_AUC": 0.057904761904761806,
+        "perm_std": 0.011939378243211287,
+        "rank_perm": 3
+      },
+      "savings_status": {
+        "I_j": 0.296328170727694,
+        "rank_SHAP": 5,
+        "perm_AUC": 0.026154761904761792,
+        "perm_std": 0.011214772257163545,
+        "rank_perm": 5
+      },
+      "age": {
+        "I_j": 0.2885434431842878,
+        "rank_SHAP": 6,
+        "perm_AUC": -0.005416666666666736,
+        "perm_std": 0.009607113353350608,
+        "rank_perm": 20
+      },
+      "credit_history": {
+        "I_j": 0.22780184277769583,
+        "rank_SHAP": 7,
+        "perm_AUC": 0.03964285714285705,
+        "perm_std": 0.011225376176092487,
+        "rank_perm": 4
+      },
+      "residence_since": {
+        "I_j": 0.20785944838521542,
+        "rank_SHAP": 8,
+        "perm_AUC": 0.0022023809523808668,
+        "perm_std": 0.013391798899990162,
+        "rank_perm": 13
+      },
+      "installment_commitment": {
+        "I_j": 0.19831926872705807,
+        "rank_SHAP": 9,
+        "perm_AUC": 0.010023809523809424,
+        "perm_std": 0.004859359904844198,
+        "rank_perm": 7
+      },
+      "other_payment_plans": {
+        "I_j": 0.17489843253235451,
+        "rank_SHAP": 10,
+        "perm_AUC": 0.020119047619047536,
+        "perm_std": 0.0033927527135140566,
+        "rank_perm": 6
+      },
+      "other_parties": {
+        "I_j": 0.1275787768324604,
+        "rank_SHAP": 11,
+        "perm_AUC": 0.002011904761904637,
+        "perm_std": 0.006829318963532808,
+        "rank_perm": 14
+      },
+      "housing": {
+        "I_j": 0.12243836669188454,
+        "rank_SHAP": 12,
+        "perm_AUC": 0.006726190476190386,
+        "perm_std": 0.007750219439509053,
+        "rank_perm": 9
+      },
+      "personal_status": {
+        "I_j": 0.11891312099818604,
+        "rank_SHAP": 13,
+        "perm_AUC": 0.005261904761904679,
+        "perm_std": 0.004386965335241181,
+        "rank_perm": 11
+      },
+      "employment": {
+        "I_j": 0.11127621854749156,
+        "rank_SHAP": 14,
+        "perm_AUC": 0.00816666666666661,
+        "perm_std": 0.0071256141080775146,
+        "rank_perm": 8
+      },
+      "property_magnitude": {
+        "I_j": 0.07396105418805965,
+        "rank_SHAP": 15,
+        "perm_AUC": 0.001595238095238005,
+        "perm_std": 0.00309532966897505,
+        "rank_perm": 16
+      },
+      "job": {
+        "I_j": 0.05344535710399507,
+        "rank_SHAP": 16,
+        "perm_AUC": 0.0016666666666666162,
+        "perm_std": 0.004667820557051703,
+        "rank_perm": 15
+      },
+      "foreign_worker": {
+        "I_j": 0.043459995852154695,
+        "rank_SHAP": 17,
+        "perm_AUC": 0.0055714285714284825,
+        "perm_std": 0.0037941654695041504,
+        "rank_perm": 10
+      },
+      "own_telephone": {
+        "I_j": 0.0432331800124608,
+        "rank_SHAP": 18,
+        "perm_AUC": -0.0027976190476191485,
+        "perm_std": 0.00116672740366683,
+        "rank_perm": 18
+      },
+      "existing_credits": {
+        "I_j": 0.037550327265891206,
+        "rank_SHAP": 19,
+        "perm_AUC": -5.952380952390923e-05,
+        "perm_std": 0.002239392987481414,
+        "rank_perm": 17
+      },
+      "num_dependents": {
+        "I_j": 0.03091602069903169,
+        "rank_SHAP": 20,
+        "perm_AUC": -0.003476190476190599,
+        "perm_std": 0.0015437681026140228,
+        "rank_perm": 19
+      }
+    },
+    "clientes": {
+      "aprobado": {
+        "posicion": 30,
+        "indice": 133,
+        "f_x": 1.4553911274273172,
+        "p_good": 0.8108267474125397,
+        "y_real": 1,
+        "top3": [
+          {
+            "variable": "checking_status",
+            "valor": "no checking",
+            "phi (log-odds)": 0.8845391363371163,
+            "efecto": "sube p(good)"
+          },
+          {
+            "variable": "age",
+            "valor": "47",
+            "phi (log-odds)": 0.832949881060049,
+            "efecto": "sube p(good)"
+          },
+          {
+            "variable": "other_payment_plans",
+            "valor": "bank",
+            "phi (log-odds)": -0.47210082487086763,
+            "efecto": "baja p(good)"
+          }
+        ],
+        "phi_todas": {
+          "checking_status": 0.8845391363371163,
+          "duration": -0.20812971239560285,
+          "credit_history": -0.08623704633209854,
+          "purpose": -0.35838035005028357,
+          "credit_amount": 0.059151351217587946,
+          "savings_status": -0.17419813555432484,
+          "employment": -0.020415147510357202,
+          "installment_commitment": -0.1396310916938819,
+          "personal_status": 0.07395882304757834,
+          "other_parties": -0.06433186168316751,
+          "residence_since": -0.06021265733987093,
+          "property_magnitude": -0.1074429084500298,
+          "age": 0.832949881060049,
+          "other_payment_plans": -0.47210082487086763,
+          "housing": -0.07706059902440757,
+          "existing_credits": 0.03583489236421883,
+          "job": -0.006693647187203169,
+          "num_dependents": -0.023625147733837365,
+          "own_telephone": -0.051073481123894454,
+          "foreign_worker": -0.012252471297979356
+        },
+        "valores": {
+          "checking_status": "no checking",
+          "duration": "18",
+          "credit_history": "existing paid",
+          "purpose": "furniture/equipment",
+          "credit_amount": "1984",
+          "savings_status": "<100",
+          "employment": "1<=X<4",
+          "installment_commitment": "4",
+          "personal_status": "male single",
+          "other_parties": "none",
+          "residence_since": "4",
+          "property_magnitude": "no known property",
+          "age": "47",
+          "other_payment_plans": "bank",
+          "housing": "for free",
+          "existing_credits": "2",
+          "job": "skilled",
+          "num_dependents": "1",
+          "own_telephone": "none",
+          "foreign_worker": "yes"
+        }
+      },
+      "rechazado": {
+        "posicion": 75,
+        "indice": 876,
+        "f_x": -1.4214273596790088,
+        "p_good": 0.19443791614346934,
+        "y_real": 1,
+        "top3": [
+          {
+            "variable": "credit_history",
+            "valor": "all paid",
+            "phi (log-odds)": -0.9378726398013533,
+            "efecto": "baja p(good)"
+          },
+          {
+            "variable": "checking_status",
+            "valor": "<0",
+            "phi (log-odds)": -0.8374517639819533,
+            "efecto": "baja p(good)"
+          },
+          {
+            "variable": "duration",
+            "valor": "18",
+            "phi (log-odds)": -0.39443828231538647,
+            "efecto": "baja p(good)"
+          }
+        ],
+        "phi_todas": {
+          "checking_status": -0.8374517639819533,
+          "duration": -0.39443828231538647,
+          "credit_history": -0.9378726398013533,
+          "purpose": 0.252354104713304,
+          "credit_amount": -0.042284017447382215,
+          "savings_status": -0.1696596719720401,
+          "employment": -0.20184924391098322,
+          "installment_commitment": -0.07386251165065914,
+          "personal_status": 0.09318869573064148,
+          "other_parties": -0.39022532841190694,
+          "residence_since": -0.030061480635777117,
+          "property_magnitude": -0.11589937235694378,
+          "age": -0.0035908997477963568,
+          "other_payment_plans": -0.2597238344547804,
+          "housing": -0.12537339604459702,
+          "existing_credits": -0.007727210309822112,
+          "job": 0.35714683968573807,
+          "num_dependents": -0.00469503553584218,
+          "own_telephone": 0.04632414885796607,
+          "foreign_worker": -0.006468575107865035
+        },
+        "valores": {
+          "checking_status": "<0",
+          "duration": "18",
+          "credit_history": "all paid",
+          "purpose": "radio/tv",
+          "credit_amount": "1940",
+          "savings_status": "<100",
+          "employment": "<1",
+          "installment_commitment": "3",
+          "personal_status": "male single",
+          "other_parties": "co applicant",
+          "residence_since": "4",
+          "property_magnitude": "no known property",
+          "age": "36",
+          "other_payment_plans": "bank",
+          "housing": "for free",
+          "existing_credits": "1",
+          "job": "high qualif/self emp/mgmt",
+          "num_dependents": "1",
+          "own_telephone": "yes",
+          "foreign_worker": "yes"
+        }
+      }
+    }
+  },
+  "task2_3": {
+    "variable": "credit_amount",
+    "sigma": 2822.7368759604406,
+    "corr_copia": 0.9987794485326602,
+    "tabla": [
+      {
+        "configuración": "intervencional (fondo 100)",
+        "mean|φ credit_amount|": 0.5179955692228323,
+        "mean|φ copia|": 0.4284904708597052,
+        "mean|φ orig + φ copia|": 0.5460257695502253,
+        "I_j sin copia (misma config.)": 0.49021347916547525
+      },
+      {
+        "configuración": "tree_path_dependent",
+        "mean|φ credit_amount|": 0.38135576333811516,
+        "mean|φ copia|": 0.36297396740911236,
+        "mean|φ orig + φ copia|": 0.5308188262060202,
+        "I_j sin copia (misma config.)": 0.4737946603657581
+      }
+    ],
+    "I_j_sin_copia": 0.4902134791654752,
+    "cortes": {
+      "credit_amount": 156,
+      "credit_amount_copia": 210,
+      "credit_amount (modelo sin copia)": 285
+    },
+    "corr_phi_orig_copia": -0.3007059000820173,
+    "auc_dup": 0.7671428571428572
+  },
+  "task2_4": [
+    {
+      "fondo": 10,
+      "MAE Kernel vs Tree": 0.0024035862303146186,
+      "error máx": 0.01701864539938583,
+      "tiempo KernelSHAP (s)": 0.8739181999990251,
+      "tiempo TreeSHAP (s)": 0.012709499991615303,
+      "Kernel s/instancia": 0.0873918199999025,
+      "evaluaciones ≈ muestras×fondo": 20000
+    },
+    {
+      "fondo": 50,
+      "MAE Kernel vs Tree": 0.00493010251531207,
+      "error máx": 0.047759524015709265,
+      "tiempo KernelSHAP (s)": 2.6679051000101026,
+      "tiempo TreeSHAP (s)": 0.02592660000664182,
+      "Kernel s/instancia": 0.2667905100010103,
+      "evaluaciones ≈ muestras×fondo": 100000
+    },
+    {
+      "fondo": 100,
+      "MAE Kernel vs Tree": 0.004362365889449045,
+      "error máx": 0.04418302272991037,
+      "tiempo KernelSHAP (s)": 5.162486100001843,
+      "tiempo TreeSHAP (s)": 0.04197649999696296,
+      "Kernel s/instancia": 0.5162486100001843,
+      "evaluaciones ≈ muestras×fondo": 200000
+    }
+  ],
+  "task2_5": {
+    "err_max_vs_tree": 2.484414962644621e-08,
+    "err_eficiencia": 4.440892098500626e-16,
+    "err_ordenes_extra": 9.325873406851315e-15,
+    "phi_exacto": [
+      [
+        -0.5530291240198704,
+        0.1943677289562336,
+        -0.07294844395440069,
+        -0.11933078780259007,
+        0.23953386177026986,
+        0.10918331947942023
+      ],
+      [
+        -1.6542116138799614,
+        0.14527378327338789,
+        -0.04027711639270694,
+        -0.10949414535391708,
+        -0.3312639437319384,
+        -0.08790309616549076
+      ],
+      [
+        -0.06682132823830217,
+        -1.5555396339100804,
+        0.053548098071728965,
+        0.050010793794588004,
+        0.5447015009359495,
+        -0.09856078830896832
+      ],
+      [
+        0.3525718107243032,
+        0.567542716444377,
+        -0.03541408111456611,
+        -0.1535207374964838,
+        0.39848244526662996,
+        -0.13575875192132475
+      ],
+      [
+        0.38914253946103744,
+        -1.6155823260824684,
+        0.026856647892408006,
+        0.007273335052362511,
+        0.9231847698787062,
+        -0.10446140063039583
+      ]
+    ],
+    "phi_tree": [
+      [
+        -0.5530291278427467,
+        0.1943677267606836,
+        -0.07294844465330243,
+        -0.11933078912086785,
+        0.2395338613493368,
+        0.10918332103639841
+      ],
+      [
+        -1.6542116270354017,
+        0.14527377400663682,
+        -0.040277115758508446,
+        -0.10949414766393602,
+        -0.331263942286605,
+        -0.08790309628471732
+      ],
+      [
+        -0.06682132927235215,
+        -1.5555396136676427,
+        0.053548104222863914,
+        0.05001078624743968,
+        0.5447015022847336,
+        -0.09856078850105404
+      ],
+      [
+        0.3525718137528747,
+        0.5675427069305442,
+        -0.03541408015415073,
+        -0.15352073787245898,
+        0.3984824396809563,
+        -0.13575875459238887
+      ],
+      [
+        0.38914253858383746,
+        -1.6155823012383188,
+        0.026856651585549115,
+        0.007273333225166425,
+        0.9231847570231184,
+        -0.10446140127256513
+      ]
+    ],
+    "v_N": [
+      1.3424365938884402,
+      -0.5332160927912496,
+      0.47199868180429333,
+      2.5385634413623133,
+      1.1710736050310273
+    ],
+    "v_vacio": [
+      1.5446600394593775,
+      1.5446600394593775,
+      1.5446600394593775,
+      1.5446600394593775,
+      1.5446600394593775
+    ]
+  },
+  "task2_6a": {
+    "p_x": 0.19443791614346934,
+    "p0": 0.8070169246055199,
+    "suma_efectos": -0.54944711916191,
+    "p_x_menos_p0": -0.6125790084620506,
+    "tabla": {
+      "credit_history": {
+        "valor": "all paid",
+        "phi_j (log-odds)": -0.9378726398013533,
+        "efecto en prob.": -0.18623474293815634
+      },
+      "checking_status": {
+        "valor": "<0",
+        "phi_j (log-odds)": -0.8374517639819533,
+        "efecto en prob.": -0.1628971687941625
+      },
+      "duration": {
+        "valor": "18",
+        "phi_j (log-odds)": -0.39443828231538647,
+        "efecto en prob.": -0.0688807195744584
+      },
+      "other_parties": {
+        "valor": "co applicant",
+        "phi_j (log-odds)": -0.39022532841190694,
+        "efecto en prob.": -0.06806721024066298
+      },
+      "job": {
+        "valor": "high qualif/self emp/mgmt",
+        "phi_j (log-odds)": 0.35714683968573807,
+        "efecto en prob.": 0.04965134051711251
+      },
+      "other_payment_plans": {
+        "valor": "bank",
+        "phi_j (log-odds)": -0.2597238344547804,
+        "efecto en prob.": -0.04368789333501011
+      },
+      "purpose": {
+        "valor": "radio/tv",
+        "phi_j (log-odds)": 0.252354104713304,
+        "efecto en prob.": 0.03629716617129197
+      },
+      "employment": {
+        "valor": "<1",
+        "phi_j (log-odds)": -0.20184924391098322,
+        "efecto en prob.": -0.0333921768392339
+      },
+      "savings_status": {
+        "valor": "<100",
+        "phi_j (log-odds)": -0.1696596719720401,
+        "efecto en prob.": -0.027804530976032527
+      },
+      "housing": {
+        "valor": "for free",
+        "phi_j (log-odds)": -0.12537339604459702,
+        "efecto en prob.": -0.02027977609440279
+      },
+      "property_magnitude": {
+        "valor": "no known property",
+        "phi_j (log-odds)": -0.11589937235694378,
+        "efecto en prob.": -0.018694525551071872
+      },
+      "personal_status": {
+        "valor": "male single",
+        "phi_j (log-odds)": 0.09318869573064148,
+        "efecto en prob.": 0.014099663478689739
+      },
+      "installment_commitment": {
+        "valor": "3",
+        "phi_j (log-odds)": -0.07386251165065914,
+        "efecto en prob.": -0.011764835871220236
+      },
+      "own_telephone": {
+        "valor": "yes",
+        "phi_j (log-odds)": 0.04632414885796607,
+        "efecto en prob.": 0.007112128502760884
+      },
+      "credit_amount": {
+        "valor": "1940",
+        "phi_j (log-odds)": -0.042284017447382215,
+        "efecto en prob.": -0.006670946296942537
+      },
+      "residence_since": {
+        "valor": "4",
+        "phi_j (log-odds)": -0.030061480635777117,
+        "efecto en prob.": -0.004725046712018344
+      },
+      "existing_credits": {
+        "valor": "1",
+        "phi_j (log-odds)": -0.007727210309822112,
+        "efecto en prob.": -0.0012062962278258649
+      },
+      "foreign_worker": {
+        "valor": "yes",
+        "phi_j (log-odds)": -0.006468575107865035,
+        "efecto en prob.": -0.0010094209722399938
+      },
+      "num_dependents": {
+        "valor": "1",
+        "phi_j (log-odds)": -0.00469503553584218,
+        "efecto en prob.": -0.000732261866636108
+      },
+      "age": {
+        "valor": "36",
+        "phi_j (log-odds)": -0.0035908997477963568,
+        "efecto en prob.": -0.0005598655416906295
+      }
+    }
+  },
+  "task2_6b": {
+    "variable": "age",
+    "rank_shap": 6,
+    "rank_perm": 20,
+    "I_j": 0.2885434431842878,
+    "perm_auc": -0.005416666666666736,
+    "perm_std": 0.009607113353350608,
+    "corr_spearman_otras": {
+      "housing": -0.3120114406624097,
+      "employment": 0.30638284200596183,
+      "personal_status": 0.27298116966040964,
+      "residence_since": 0.24456660213655007,
+      "credit_history": -0.19994395903894796,
+      "num_dependents": 0.19599274407175457,
+      "own_telephone": 0.1814147851978692,
+      "existing_credits": 0.13744109081145248
+    },
+    "perm_logloss": -0.015770684257054347,
+    "rank_perm_logloss": 20,
+    "clientes_que_cruzan": 8
+  },
+  "task2_6d": {
+    "razon_tiempos": {
+      "10": 1.0,
+      "50": 3.0528087182680013,
+      "100": 5.907287547058297
+    },
+    "t_pred100_s": 0.0011677500006044284,
+    "t_exacto_20_s": 1224.474624633789,
+    "t_kernel_por_instancia_s": 0.5162486100001843,
+    "anios_60_vars": 36533.87788066415
+  }
+}
