@@ -22,8 +22,8 @@ Explicabilidad-e-Interpretabilidad-de-Modelos/
 │   └── FUENTES.md
 ├── figuras/                   # figuras generadas por el notebook
 ├── resultados/                # números de cada entrega en JSON
-│   └── resultados_parcial.json
-└── informe/                   # informes en PDF
+    ├── resultados_parcial.json  # Tasks 1 y 2
+    └── resultados_final.json    # Tasks 1 a 4
 ```
 
 ## Cómo ejecutar
@@ -35,7 +35,7 @@ En Google Colab:
 %cd Explicabilidad-e-Interpretabilidad-de-Modelos
 ```
 
-Luego abra `Lab10_XAI_22246.ipynb` y ejecute *Runtime → Run all*. Todo corre en CPU con **semilla 42**.
+Luego abra `Lab10_XAI_22246.ipynb` y ejecute *Runtime → Run all*. Todo corre en CPU con **semilla 42** (unos minutos en total; la parte más larga es la verificación de estabilidad de LIME del Task 3.5a).
 El conjunto German Credit se descarga con `fetch_openml("credit-g", version=1)` y los pesos de ResNet-18 con torchvision.
 
 ## Entregas

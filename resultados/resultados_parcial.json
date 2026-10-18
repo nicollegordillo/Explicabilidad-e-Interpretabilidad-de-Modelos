@@ -578,27 +578,27 @@
       "fondo": 10,
       "MAE Kernel vs Tree": 0.0024035862303146186,
       "error máx": 0.01701864539938583,
-      "tiempo KernelSHAP (s)": 0.8739181999990251,
-      "tiempo TreeSHAP (s)": 0.012709499991615303,
-      "Kernel s/instancia": 0.0873918199999025,
+      "tiempo KernelSHAP (s)": 0.4462876000034157,
+      "tiempo TreeSHAP (s)": 0.005396200023824349,
+      "Kernel s/instancia": 0.04462876000034157,
       "evaluaciones ≈ muestras×fondo": 20000
     },
     {
       "fondo": 50,
       "MAE Kernel vs Tree": 0.00493010251531207,
       "error máx": 0.047759524015709265,
-      "tiempo KernelSHAP (s)": 2.6679051000101026,
-      "tiempo TreeSHAP (s)": 0.02592660000664182,
-      "Kernel s/instancia": 0.2667905100010103,
+      "tiempo KernelSHAP (s)": 1.4176436999987345,
+      "tiempo TreeSHAP (s)": 0.01209870001184754,
+      "Kernel s/instancia": 0.14176436999987346,
       "evaluaciones ≈ muestras×fondo": 100000
     },
     {
       "fondo": 100,
       "MAE Kernel vs Tree": 0.004362365889449045,
       "error máx": 0.04418302272991037,
-      "tiempo KernelSHAP (s)": 5.162486100001843,
-      "tiempo TreeSHAP (s)": 0.04197649999696296,
-      "Kernel s/instancia": 0.5162486100001843,
+      "tiempo KernelSHAP (s)": 2.744320300000254,
+      "tiempo TreeSHAP (s)": 0.020096099993679672,
+      "Kernel s/instancia": 0.2744320300000254,
       "evaluaciones ≈ muestras×fondo": 200000
     }
   ],
@@ -837,12 +837,12 @@
   "task2_6d": {
     "razon_tiempos": {
       "10": 1.0,
-      "50": 3.0528087182680013,
-      "100": 5.907287547058297
+      "50": 3.176524958318099,
+      "100": 6.149219247810716
     },
-    "t_pred100_s": 0.0011677500006044284,
-    "t_exacto_20_s": 1224.474624633789,
-    "t_kernel_por_instancia_s": 0.5162486100001843,
+    "t_pred100_s": 0.0005713499995181337,
+    "t_exacto_20_s": 599.1038970947266,
+    "t_kernel_por_instancia_s": 0.2744320300000254,
     "anios_60_vars": 36533.87788066415
   }
 }
